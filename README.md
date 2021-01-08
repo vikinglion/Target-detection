@@ -10,7 +10,7 @@
 
 ## Install
 1. Install PyTorch 1.6.0+cu101
-'''
+```
 pip install torch==1.6.0 torchvision==0.7.0
-'''
+```
 2. 
