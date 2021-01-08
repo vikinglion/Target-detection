@@ -24,6 +24,6 @@ pip install mmcv-full== 1.1.5
 ```
 4.Install build requirements
 ```
-pip install -r requirements/build.txt
+pip install -r mmdetection-master\requirements\build.txt
 pip install -v -e .
 ```
