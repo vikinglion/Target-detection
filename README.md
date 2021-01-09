@@ -36,15 +36,15 @@ Directory shold like this:
 -- data
    |-- WIDERFace
        |-- WIDER_train
-           |-- 0--parade
-           |-- 1--Handshaking
-           ...
-           |-- annotations
+       |   |-- 0--parade
+       |   |-- 1--Handshaking
+       |   ...
+       |   |-- annotations
        |-- WIDER_val
-           |-- 0--parade
-           |-- 1--Handshaking
-           ...
-           |-- annotations
+       |   |-- 0--parade
+       |   |-- 1--Handshaking
+       |   ...
+       |   |-- annotations
        |-- train.txt
        |-- val.txt
 ```
