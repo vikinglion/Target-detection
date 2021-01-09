@@ -22,7 +22,7 @@ pip install torch==1.6.0 torchvision==0.7.0
 ```
 pip install mmcv-full== 1.1.5
 ```
-4. **Download mmdetection at <https://github.com/open-mmlab/mmdetection>  **
+4. **Download mmdetection at <https://github.com/open-mmlab/mmdetection**  
 Or
 ```
 git clone https://github.com/open-mmlab/mmdetection.git
@@ -54,7 +54,7 @@ Directory shold like this:
        |-- val.txt
 ```
 ## Train
-1. **Modify ```configs\yolo\yolov3_d53_mstrain-608_273e_coco_v1.py```  **
+1. **Modify ```configs\yolo\yolov3_d53_mstrain-608_273e_coco_v1.py```**  
 Replace the Coco data set with Widerface:
 ```
 # dataset settings
@@ -125,7 +125,7 @@ python ./tools/train.py ./configs/yolo/yolov3_d53_mstrain-608_273e_coco_v1.py --
 ```
 ## Training model and test results
 1. **The training model will be saved in ```work_dirs\yolov3_d53_mstrain-608_273e_coco_v1```**
-2. **The training process details and test results will be saved in the ```.log``` file  **
+2. **The training process details and test results will be saved in the ```.log``` file**  
 Or **visualize the results through Tensorboard**
 ```
 cd tf_logs
