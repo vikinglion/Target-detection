@@ -18,11 +18,13 @@ conda activate mmdetection
 ```
 pip install torch==1.6.0 torchvision==0.7.0
 ```
-3.Install mmcv-full 1.1.5
+3. Install mmcv-full 1.1.5
 ```
 pip install mmcv-full== 1.1.5
 ```
-4.Install build requirements
+4. Download mmdetection <https://github.com/open-mmlab/mmdetection.git>
+
+5. Install build requirements
 ```
 pip install -r mmdetection-master\requirements\build.txt
 pip install -v -e .
@@ -48,3 +50,5 @@ Directory shold like this:
        |-- train.txt
        |-- val.txt
 ```
+## Train
+1. Modify ```configs\yolo\yolov3_d53_mstrain-608_273e_coco_v1.py```
