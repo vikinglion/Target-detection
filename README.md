@@ -27,3 +27,5 @@ pip install mmcv-full== 1.1.5
 pip install -r mmdetection-master\requirements\build.txt
 pip install -v -e .
 ```
+## Data
+1. You need to download WIDER Face Training, Vlidation, Testing Image from [WIDER FACE]<http://shuoyang1213.me/WIDERFACE/>
