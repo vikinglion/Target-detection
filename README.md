@@ -3,7 +3,7 @@
 ## Introduction
 This is a tutorial for object detection by using the **MMDetection** toolbox, the training model is **yolo** and the data set is **WIDER FACE**.
 ## Environment
-* Windows
+* Windows10
 * CUDA 10.2
 * cuDNN v8.0.2
 * GPU: NVIDIA GeForce GTX 1660 Ti
