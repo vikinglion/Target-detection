@@ -22,7 +22,7 @@ pip install torch==1.6.0 torchvision==0.7.0
 ```
 pip install mmcv-full== 1.1.5
 ```
-4. Download mmdetection <https://github.com/open-mmlab/mmdetection.git>
+4. Download mmdetection <https://github.com/open-mmlab/mmdetection>
 
 5. Install build requirements
 ```
