@@ -9,25 +9,25 @@ This is a tutorial for object detection by using the **MMDetection** toolbox, th
 * GPU: NVIDIA GeForce GTX 1660 Ti
 
 ## Installation
-1. Create a conda environment
+1. **Create a conda environment**
 ```
 conda create -n mmdetection python=3.8 -y
 conda activate mmdetection
 ```
-2. Install PyTorch 1.6.0+cu101
+2. **Install PyTorch 1.6.0+cu101**
 ```
 pip install torch==1.6.0 torchvision==0.7.0
 ```
-3. Install mmcv-full 1.1.5
+3. **Install mmcv-full 1.1.5**
 ```
 pip install mmcv-full== 1.1.5
 ```
-4. Download mmdetection at <https://github.com/open-mmlab/mmdetection>  
+4. **Download mmdetection at <https://github.com/open-mmlab/mmdetection>  **
 Or
 ```
 git clone https://github.com/open-mmlab/mmdetection.git
 ```
-5. Install build requirements
+5. **Install build requirements**
 ```
 pip install -r mmdetection-master\requirements\build.txt
 pip install -v -e .
@@ -54,7 +54,7 @@ Directory shold like this:
        |-- val.txt
 ```
 ## Train
-1. Modify ```configs\yolo\yolov3_d53_mstrain-608_273e_coco_v1.py```  
+1. **Modify ```configs\yolo\yolov3_d53_mstrain-608_273e_coco_v1.py```  **
 Replace the Coco data set with Widerface:
 ```
 # dataset settings
@@ -119,14 +119,14 @@ data = dict(
         img_prefix=data_root + 'WIDER_val/',
         pipeline=test_pipeline))
 ```
-2. Start training after adjusting the parameters
+2. **Start training after adjusting the parameters**
 ```
 python ./tools/train.py ./configs/yolo/yolov3_d53_mstrain-608_273e_coco_v1.py --gpu-id 0
 ```
-## Training model and running results
-1. The training model will be saved in ```work_dirs\yolov3_d53_mstrain-608_273e_coco_v1```
-2. The training process details and test results will be saved in the ```.log``` file  
-Or visualize the results through Tensorboard
+## Training model and test results
+1. **The training model will be saved in ```work_dirs\yolov3_d53_mstrain-608_273e_coco_v1```**
+2. **The training process details and test results will be saved in the ```.log``` file  **
+Or **visualize the results through Tensorboard**
 ```
 cd tf_logs
 tensorboard --logdir=./
