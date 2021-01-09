@@ -22,7 +22,11 @@ pip install torch==1.6.0 torchvision==0.7.0
 ```
 pip install mmcv-full== 1.1.5
 ```
-4. Download mmdetection at <https://github.com/open-mmlab/mmdetection>
+4. Download mmdetection at <https://github.com/open-mmlab/mmdetection>  
+Or
+```
+git clone https://github.com/open-mmlab/mmdetection.git
+```
 
 5. Install build requirements
 ```
@@ -52,7 +56,7 @@ Directory shold like this:
 ```
 ## Train
 1. Modify ```configs\yolo\yolov3_d53_mstrain-608_273e_coco_v1.py```  
-Replace the Coco data set with Widerface
+Replace the Coco data set with Widerface:
 ```
 # dataset settings
 dataset_type = 'WIDERFaceDataset'
@@ -115,4 +119,8 @@ data = dict(
         ann_file=data_root + 'val.txt',
         img_prefix=data_root + 'WIDER_val/',
         pipeline=test_pipeline))
+```
+2. Start training after adjusting the parameters
+```
+python ./tools/train.py ./configs/yolo/yolov3_d53_mstrain-608_273e_coco_v1.py --gpu-id 0
 ```
