@@ -1,7 +1,7 @@
 # Object-detection
 
 ## Introduction
-
+This is a tutorial for target detection by using the MMDetection toolbox with yolo, the data set is WIDER FACE.
 ## Environment
 * Windows
 * CUDA 10.2
@@ -27,7 +27,6 @@ Or
 ```
 git clone https://github.com/open-mmlab/mmdetection.git
 ```
-
 5. Install build requirements
 ```
 pip install -r mmdetection-master\requirements\build.txt
