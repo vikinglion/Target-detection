@@ -124,3 +124,11 @@ data = dict(
 ```
 python ./tools/train.py ./configs/yolo/yolov3_d53_mstrain-608_273e_coco_v1.py --gpu-id 0
 ```
+## Training model and running results
+1. The training model will be saved in ```work_dirs\yolov3_d53_mstrain-608_273e_coco_v1```
+2. The training process details and test results will be saved in the ```.log``` file  
+Or visualize the results through Tensorboard
+```
+cd tf_logs
+tensorboard --logdir=./
+```
