@@ -28,4 +28,23 @@ pip install -r mmdetection-master\requirements\build.txt
 pip install -v -e .
 ```
 ## Data
-1. You need to download WIDER Face Training, Vlidation, Testing Image from [WIDER FACE]<http://shuoyang1213.me/WIDERFACE/>
+1. You need to download WIDER Face Training, Vlidation, Testing Image from <http://shuoyang1213.me/WIDERFACE/>
+2. Run ``` convert.py ``` to split images and annotations
+3. Create folder ```data``` in ``` mmdetection-master```
+Directory shold like this:
+```
+-- data
+   |-- WIDERFace
+       |-- WIDER_train
+           |-- 0--parade
+           |-- 1--Handshaking
+           ...
+           |-- annotations
+       |-- WIDER_val
+           |-- 0--parade
+           |-- 1--Handshaking
+           ...
+           |-- annotations
+       |-- train.txt
+       |-- val.txt
+```
