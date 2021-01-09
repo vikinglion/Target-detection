@@ -1,7 +1,7 @@
 # Object-detection
 
 ## Introduction
-This is a tutorial for target detection by using the MMDetection toolbox with yolo, the data set is WIDER FACE.
+This is a tutorial for object detection by using the MMDetection toolbox with yolo, the data set is WIDER FACE.
 ## Environment
 * Windows
 * CUDA 10.2
