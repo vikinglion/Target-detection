@@ -32,7 +32,7 @@ pip install -v -e .
 ## Data
 1. You need to download WIDER Face Training, Vlidation, Testing Image from <http://shuoyang1213.me/WIDERFACE/>
 2. Run ``` convert.py ``` to split images and annotations
-3. Create folder ```data``` in ``` mmdetection-master```
+3. Create folder ```data``` in ``` mmdetection-master``` \\
 Directory shold like this:
 ```
 -- data
@@ -51,7 +51,7 @@ Directory shold like this:
        |-- val.txt
 ```
 ## Train
-1. Modify ```configs\yolo\yolov3_d53_mstrain-608_273e_coco_v1.py```
+1. Modify ```configs\yolo\yolov3_d53_mstrain-608_273e_coco_v1.py``` \\
 Replace the Coco data set with Widerface
 ```
 # dataset settings
